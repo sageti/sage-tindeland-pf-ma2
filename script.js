@@ -30,9 +30,30 @@ var catArray = [
 	},
 ];
 
+//Another way of solving this - teacher feedback:
+var catArray = [];
+catArray.push(catObject);
+
+console.log(catArray.length);
+// 1
+
+var catArray = [];
+catArray.push(catObject, dogObject);
+
+console.log(catArray.length);
+// 2
+
 // Question 8:Loop through catArray and console log each property of each object inside (there will be only 1 object inside).
 for (var i = 0; i < catArray.length; i++) {
 	console.log(catArray[i]);
+}
+
+//For question 8 we were expecting: (Teacher feedback)
+
+for (var i = 0; i < catArray.length; i++) {
+	console.log(catArray[i].name);
+	console.log(catArray[i].color);
+	console.log(catArray[i].age);
 }
 
 // Question 9:Create a function called logToConsole. The function should accept 1 argument.
